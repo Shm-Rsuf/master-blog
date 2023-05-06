@@ -1,0 +1,96 @@
+/* reset and common code starts here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 400;
+  outline: none;
+}
+
+html {
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  width: 100rem;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+/* reset and common code ends here */
+
+/* header starts here */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  color: #f7f7f7;
+  padding: 2rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  min-height: 5vh;
+}
+
+.logo__figure {
+  border: 1px solid #090c0f;
+}
+
+.logo {
+  font-size: 4rem;
+  padding: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  padding: 0.5rem 1.2rem;
+  transition: all 0.4s;
+}
+
+nav ul li:hover {
+  background-color: crimson;
+  border-radius: 5px;
+}
+
+.nav__link {
+  font-size: 1.8rem;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+/* header ends here */
+
+/* responsiveness starts here */
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 48.5%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding-left: 2.5rem;
+  }
+}
+/* responsiveness ends here */
