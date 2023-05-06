@@ -7,6 +7,7 @@
   list-style-type: none;
   font-weight: 400;
   outline: none;
+  border: none;
 }
 
 html {
@@ -23,6 +24,14 @@ body {
   max-width: 100%;
   margin: 0 auto;
   box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+
+.section__heading {
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text__justify {
@@ -117,6 +126,58 @@ nav ul li:hover {
   border: 0.2rem solid #1f2937;
 }
 /* banner section ends here */
+
+/* about__me section starts here */
+#blog__about {
+  background-color: gray;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1;
+  background-color: tomato;
+  padding: 3rem 1rem;
+  margin: 2rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card__title {
+  font-size: 3rem;
+  color: white;
+}
+
+.card__description {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+.card__btn {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  width: 80%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+/* about__me section ends here */
 
 /* responsiveness starts here */
 @media screen and (max-width: 992px) {
