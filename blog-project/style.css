@@ -24,6 +24,14 @@ body {
   margin: 0 auto;
   box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
 }
+
+.text__justify {
+  text-align: justify;
+}
+
+.text__white {
+  color: white;
+}
 /* reset and common code ends here */
 
 /* header starts here */
@@ -71,12 +79,82 @@ nav ul li:hover {
 }
 /* header ends here */
 
+/* banner section starts here */
+.banner {
+  padding: 5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+}
+
+.banner article {
+  flex-basis: 50%;
+  margin: 1rem;
+}
+
+.banner__title {
+  background-color: tomato;
+  font-size: 2.4rem;
+  display: inline-block;
+  padding: 1rem;
+  color: #f7f7f7;
+  margin-bottom: 1.5rem;
+}
+
+.banner__description {
+  font-size: 1.6rem;
+}
+
+.banner aside {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.banner__image {
+  width: 40rem;
+  height: 40rem;
+  border: 0.2rem solid #1f2937;
+}
+/* banner section ends here */
+
 /* responsiveness starts here */
 @media screen and (max-width: 992px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner article {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .banner__title {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
     font-size: 55.5%;
+  }
+
+  .banner article {
+    width: 75%;
+  }
+
+  .banner aside {
+    width: 73vw;
+    text-align: center;
+  }
+
+  .banner .banner__image {
+    width: 100%;
+    height: auto;
   }
 }
 @media screen and (max-width: 600px) {
@@ -91,6 +169,18 @@ nav ul li:hover {
   nav ul {
     flex-direction: column;
     padding-left: 2.5rem;
+  }
+
+  .banner {
+    min-height: auto;
+  }
+
+  .banner article {
+    width: 100%;
+  }
+
+  .banner aside {
+    width: 96vw;
   }
 }
 /* responsiveness ends here */
