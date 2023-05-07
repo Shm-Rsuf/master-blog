@@ -27,8 +27,9 @@ body {
 }
 
 .section__heading {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 4rem;
+  padding: 5rem 0rem;
   display: flex;
   font-family: "Italiano", cursive;
   justify-content: center;
@@ -218,6 +219,12 @@ nav ul li:hover {
     width: 100%;
     height: auto;
   }
+
+  .cards {
+    width: 75%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 600px) {
   html {
@@ -243,6 +250,10 @@ nav ul li:hover {
 
   .banner aside {
     width: 96vw;
+  }
+
+  .cards {
+    width: 95%;
   }
 }
 /* responsiveness ends here */
