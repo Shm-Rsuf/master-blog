@@ -239,10 +239,14 @@ nav ul li:hover {
 /* archives section ends here */
 
 /* blog posts section starts here */
+.blog__posts {
+  gap: 1.5rem;
+}
+
 .blog__post {
   width: 70%;
   display: flex;
-  margin: 2.5rem 0rem;
+  margin: 1.5rem 0rem;
   transition: var(--transition);
   box-shadow: var(--box-shadow);
 }
@@ -349,6 +353,10 @@ footer p {
   #blog__archives {
     min-height: auto;
   }
+
+  .blog__post {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 600px) {
   html {
@@ -384,6 +392,11 @@ footer p {
     flex-wrap: wrap;
     gap: 1rem;
     flex-direction: column;
+  }
+
+  .blog__post {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 /* responsiveness ends here */
