@@ -2,6 +2,7 @@
 :root {
   --transition: all 0.3s;
   --scale: scale(1.1);
+  --box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
 }
 * {
   margin: 0;
@@ -27,7 +28,7 @@ body {
   width: 100rem;
   max-width: 100%;
   margin: 0 auto;
-  box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+  box-shadow: var(--box-shadow);
 }
 
 .section__heading {
@@ -38,6 +39,14 @@ body {
   font-family: "Italiano", cursive;
   justify-content: center;
   align-items: center;
+  font-weight: 300;
+}
+
+.section__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .text__justify {
@@ -46,6 +55,23 @@ body {
 
 .text__white {
   color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.btn {
+  background-color: tomato;
+  color: white;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
 /* reset and common code ends here */
 
@@ -211,6 +237,53 @@ nav ul li:hover {
   transform: var(--scale);
 }
 /* archives section ends here */
+
+/* blog posts section starts here */
+.blog__post {
+  width: 70%;
+  display: flex;
+  margin: 2.5rem 0rem;
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+}
+
+.blog__post:hover {
+  transform: var(--scale);
+}
+
+.blog__aside {
+  flex: 1;
+}
+
+.blog_post-article {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  margin-left: 2rem;
+  justify-content: space-evenly;
+}
+
+.blog__post-heading {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.blog__post-subheading {
+  font-size: 2rem;
+}
+
+.blog__post-description {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.blog__btn {
+  width: 35%;
+}
+
+/* blog posts section ends here */
 
 /* footer section starts here */
 footer {
