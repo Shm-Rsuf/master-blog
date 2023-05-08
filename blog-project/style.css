@@ -2,7 +2,7 @@
 :root {
   --transition: all 0.3s;
   --scale: scale(1.1);
-  --box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+  --box-shadow: 0.1rem 0.1rem 0.1rem #a7a7a7, -0.1rem 0rem 0.1rem #a7a7a7;
 }
 * {
   margin: 0;
@@ -286,8 +286,53 @@ nav ul li:hover {
 .blog__btn {
   width: 35%;
 }
-
 /* blog posts section ends here */
+
+/* contact section starts here */
+#contact__section {
+  background-color: #c4c4c4;
+  height: 95vh;
+}
+
+form {
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__control {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.5rem; */
+}
+
+.form__control label {
+  font-size: 1.6rem;
+  flex: 0.3;
+}
+
+.form__control > input,
+textarea {
+  flex: 0.7;
+  width: 40rem;
+  padding: 1.5rem 1rem;
+}
+
+.contact__btn {
+  display: flex;
+  justify-content: end;
+}
+
+.form__btn {
+  width: 30%;
+  border-radius: 0;
+}
+/* contact section ends here */
 
 /* footer section starts here */
 footer {
@@ -357,6 +402,10 @@ footer p {
   .blog__post {
     width: 90%;
   }
+
+  #contact__section {
+    height: auto;
+  }
 }
 @media screen and (max-width: 600px) {
   html {
@@ -397,6 +446,10 @@ footer p {
   .blog__post {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  form {
+    width: 90%;
   }
 }
 /* responsiveness ends here */
