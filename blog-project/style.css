@@ -349,6 +349,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 5rem;
+  gap: 1rem;
 }
 
 .footer__description {
@@ -365,6 +366,12 @@ footer {
 
 .footer__link {
   color: white;
+  transition: var(--transition);
+}
+
+.footer__link:hover {
+  color: rgb(20, 20, 151);
+  transform: scale(1.2);
 }
 
 .footer__icon {
@@ -472,6 +479,10 @@ footer {
 
   form {
     width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
   }
 }
 /* responsiveness ends here */
